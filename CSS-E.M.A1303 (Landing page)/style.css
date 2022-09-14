@@ -1,0 +1,362 @@
+html {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-size: 16px;
+    max-width: 1500px;
+    background-color: black;
+}
+main {
+    background-color: white;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(/PublicaSans-Regular.otf);
+    font-size: 18px;
+} 
+h1 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+span {
+    font-size: 24px;
+}
+
+/* header section */
+header {
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+header > button {
+    display: none;
+}
+.header-container > img {
+    max-width: 100%;
+}
+.download {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+    padding: 12px 24px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    text-align: center;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+.download h2 {
+    font-size: 24px;
+}
+.download:hover {
+    opacity:unset
+}
+.download-button {
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.take-tour-link {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    margin-right: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.take-tour-link:hover {
+    color: black;
+    background-color: white;
+}
+
+/* description section */
+.description {
+    padding: 64px 8px;
+    display: flex;
+}
+.description > .column {
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+.description .column.left {
+    width: 60%;
+}
+.description .column.right {
+    width: 40%;
+}
+.description img {
+    float: right;
+    max-width: 100%;
+}
+.description h2 {
+    color: #4CAF50;
+    font-weight: bold;
+}
+.description article, .description p, .description h1, .description h2 {
+    margin: 16px 0;
+}
+.description .desktop-button {
+    margin: 16px 0;
+    padding: 12px 24px;
+    font: inherit;
+    border: none;
+}
+.description .mobile-button {
+    display: none;
+}
+.description i {
+    font-size: 24px;
+}
+.description .fa-android {
+    color: #4CAF50;
+}
+.description .fa-windows {
+    color: #2196F3;
+}
+.description .fa-download {
+    font-size: 16px;
+}
+
+/* clarity */
+.clarity {
+    display: flex;
+    background-color: #f1f1f1;
+    padding-top: 48px;
+    padding-bottom: 36px;
+}
+.clarity .left {
+    flex: 33%;
+    padding: 16px;
+}
+.clarity img {
+    border-radius: 5px;
+    filter: grayscale(75%);
+    max-width: 100%;
+}
+.clarity .right {
+    flex: 67%;
+    padding: 8px;
+}
+.clarity h1 {
+    margin: 0;
+}
+.clarity h2 {
+    color: #f44336;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* features */
+.features {
+    background-color: #616161;
+    color: white;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 48px;
+    padding-top: 48px;
+}
+
+.features-container i {
+    display: block;
+    font-size: 64px;
+}
+
+/* pricing */
+.pricing {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+
+.pricing h2 {
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+.pricing ul {
+    list-style-type: none;
+    align-self: center;
+    width: 80%;
+    padding: 0;
+    margin: 0 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.pricing-plan {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    justify-content: center;
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+.pricing-plan li+li {
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+.pricing-plan .basic h3 {
+    background-color: #616161;
+}
+
+.pricing-plan .premium h3 {
+    background-color: #f44336;
+}
+
+.pricing-plan p {
+    font-size: 28px;
+    color: grey;
+    margin: 8px 0;
+}
+
+.pricing-plan button {
+    font-family: inherit;
+    padding: 12px 24px;
+    background-color: black;
+}
+
+.pricing-plan button, .pricing-plan i {
+    font-size: 16px;
+    color: white;
+}
+
+.pricing-plan .download-row {
+    padding: 24px;
+    background-color: #f1f1f1;
+}
+
+/* footer */
+footer {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 64px;
+    background-color: #f1f1f1;
+}
+
+footer .fa {
+    font-size: 24px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer > i {
+    margin: 0 1px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .download {
+        display: none;
+    }
+    header > button {
+        display: block;
+    }
+    .download-button {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    .take-tour-link {
+        border-radius: 0;
+        width: 100%;
+        margin-right: 0;
+        right: unset;
+        top: unset;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    /* description */
+    .description {
+        display: block;
+    }
+    .description > .column.left, .description > .column.right {
+        width: 100%;
+    }
+    .description > .column.right {
+        text-align: center;
+    }
+    .description img {
+        float: none;
+        margin-top: 16px;
+    }
+    .description .desktop-button {
+        display: none;
+    }
+    .description .mobile-button {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        background-color: white;
+        font: inherit;
+        border: none;    
+    }
+    .description .mobile-button:hover {
+        background-color: gainsboro;
+    }
+    /* clarity */
+    .clarity {
+        display: block;
+    }
+    .clarity img {
+        width: 100%;
+    }
+    .clarity article {
+        padding: 8px 0;
+    }
+    .clarity .right {
+        padding-top: 0;
+    }
+    /* pricing */
+    .pricing-plan {
+        display: block;
+    }
+    .pricing-plan ul {
+        width: auto;
+        margin-bottom: 36px;
+    }   
+}
+
